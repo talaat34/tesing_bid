@@ -14,6 +14,7 @@
   </head>
   <body>
     <style>
+      /*http://jsfiddle.net/girishgowdayt/RUDWS/*/
       .chat-box {
         height: 592px;
         background: #f7f7f7;
@@ -82,6 +83,12 @@
         cursor: pointer;
         font-size: 19px;
       }
+      .footer {
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+      }
     </style>
     <div class="chat-box">
       <div class="chat outgoing">
@@ -141,14 +148,16 @@
         </div>
       </div>
     </div>
-    <form action="" class="typing-area">
-      <input
-        type="text"
-        placeholder="(Name) - (Lot No) - (price)"
-        name=""
-        id=""
-      />
-      <button><i class="fab fa-telegram-plane"></i></button>
-    </form>
+    <div class="footer">
+      <form action="" class="typing-area">
+        <input
+          type="text"
+          placeholder="(Name) - (Lot No) - (price)"
+          name=""
+          id=""
+        />
+        <button><i class="fab fa-telegram-plane"></i></button>
+      </form>
+    </div>
   </body>
 </html>
